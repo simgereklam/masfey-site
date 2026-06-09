@@ -1,6 +1,1 @@
-
-function sendWhatsApp(){
-let ad=document.getElementById('ad')?.value||'',tel=document.getElementById('tel')?.value||'',adres=document.getElementById('adres')?.value||'',parsel=document.getElementById('parsel')?.value||'',konu=document.getElementById('konu')?.value||'',mesaj=document.getElementById('mesaj')?.value||'';
-let text='Merhaba Masfey İnşaat,%0A%0AÖn başvuru yapmak istiyorum.%0A%0AAd Soyad: '+encodeURIComponent(ad)+'%0ATelefon: '+encodeURIComponent(tel)+'%0AAdres: '+encodeURIComponent(adres)+'%0AAda Parsel: '+encodeURIComponent(parsel)+'%0AKonu: '+encodeURIComponent(konu)+'%0AMesaj: '+encodeURIComponent(mesaj);
-window.open('https://wa.me/905431813485?text='+text,'_blank');
-}
+function sendWhatsApp(){let ad=document.getElementById('ad')?.value||'',tel=document.getElementById('tel')?.value||'',adres=document.getElementById('adres')?.value||'',konu=document.getElementById('konu')?.value||'';let text='Merhaba Masfey İnşaat,%0AÖn başvuru yapmak istiyorum.%0AAd Soyad: '+encodeURIComponent(ad)+'%0ATelefon: '+encodeURIComponent(tel)+'%0AAdres: '+encodeURIComponent(adres)+'%0AKonu: '+encodeURIComponent(konu);window.open('https://wa.me/905431813485?text='+text,'_blank')}
