@@ -148,10 +148,16 @@ details{background:white;border:1px solid #e8ecf2;border-radius:14px;padding:18p
 }
 
 .brand img{
-  width:132px!important;
-  height:94px!important;
-  object-fit:contain!important;
-  display:block!important;
+ width:120px;
+    height:auto;
+    object-fit:contain;
+    display:block;
+    margin:auto;
+  .brand{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 }
 
 .brand-title,
