@@ -148,16 +148,10 @@ details{background:white;border:1px solid #e8ecf2;border-radius:14px;padding:18p
 }
 
 .brand img{
- width:120px;
-    height:auto;
-    object-fit:contain;
-    display:block;
-    margin:auto;
-  .brand{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
+  width:132px!important;
+  height:94px!important;
+  object-fit:contain!important;
+  display:block!important;
 }
 
 .brand-title,
@@ -344,5 +338,140 @@ details{background:white;border:1px solid #e8ecf2;border-radius:14px;padding:18p
   }
   .hero p{
     font-size:17px!important;
+  }
+}
+
+/* === MASFEY MOBİL MENÜ DÜZELTME ===
+   Bilgisayarda mevcut yatay menü korunur.
+   Telefonda logo + hamburger menü görünür. */
+.menu-toggle{
+  display:none;
+}
+
+@media(max-width:768px){
+  .header{
+    z-index:99999!important;
+  }
+
+  .nav{
+    width:100%!important;
+    min-height:88px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    position:relative!important;
+    padding:8px 16px!important;
+    text-align:left!important;
+  }
+
+  .header-left{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-start!important;
+    gap:8px!important;
+    flex:0 0 auto!important;
+  }
+
+  .brand{
+    width:auto!important;
+    min-width:0!important;
+    height:auto!important;
+    margin:0!important;
+    padding:0!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+  }
+
+  .brand img{
+    width:108px!important;
+    height:auto!important;
+    max-height:72px!important;
+    object-fit:contain!important;
+    margin:0!important;
+  }
+
+  .company-title-menu{
+    display:none!important;
+  }
+
+  .topbtn{
+    display:none!important;
+  }
+
+  .menu-toggle{
+    display:block!important;
+    background:transparent!important;
+    border:0!important;
+    color:#111!important;
+    font-size:42px!important;
+    line-height:1!important;
+    cursor:pointer!important;
+    padding:4px 8px!important;
+    margin-left:auto!important;
+    z-index:100001!important;
+  }
+
+  .menu{
+    display:none!important;
+  }
+
+  body.menu-open .menu{
+    display:block!important;
+    position:absolute!important;
+    top:100%!important;
+    left:0!important;
+    right:0!important;
+    width:100%!important;
+    background:#fff!important;
+    z-index:100000!important;
+    margin:0!important;
+    padding:0!important;
+    box-shadow:0 12px 28px rgba(0,0,0,.16)!important;
+    border-top:1px solid #eee!important;
+  }
+
+  body.menu-open .menu a{
+    display:block!important;
+    width:100%!important;
+    padding:20px 26px!important;
+    border-bottom:1px solid #eee!important;
+    border-top:0!important;
+    border-left:0!important;
+    border-right:0!important;
+    font-size:24px!important;
+    line-height:1.25!important;
+    font-weight:400!important;
+    color:#111!important;
+    text-align:left!important;
+    background:#fff!important;
+  }
+
+  body.menu-open .menu a:hover,
+  body.menu-open .menu a.active{
+    color:#111!important;
+    border-color:#eee!important;
+  }
+
+  body.menu-open .menu-toggle{
+    font-size:0!important;
+  }
+
+  body.menu-open .menu-toggle:before{
+    content:"×";
+    display:block;
+    font-size:52px;
+    line-height:.8;
+    color:#111;
+  }
+
+  .hero{
+    margin-top:0!important;
+  }
+}
+
+@media(min-width:769px){
+  .menu-toggle{
+    display:none!important;
   }
 }
