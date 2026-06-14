@@ -605,9 +605,9 @@ details{background:white;border:1px solid #e8ecf2;border-radius:14px;padding:18p
   width: 90%;
 }
 
-.hero-video-yazi h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
+.hero-video-yazi h1{
+    font-size:72px;
+    font-weight:800;
 }
 
 .hero-video-yazi p {
