@@ -637,3 +637,58 @@ details{background:white;border:1px solid #e8ecf2;border-radius:14px;padding:18p
     font-size: 18px;
   }
 }
+.application-section{
+    background:#f8f8f8;
+    padding:70px 0;
+}
+
+.application-form{
+    max-width:1000px;
+    margin:40px auto 0;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.application-form input,
+.application-form textarea{
+    width:100%;
+    padding:16px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    margin-bottom:20px;
+    box-sizing:border-box;
+}
+
+.application-form textarea{
+    resize:vertical;
+}
+
+.application-form button{
+    width:100%;
+    background:#c89b2b;
+    color:#fff;
+    border:none;
+    padding:18px;
+    font-size:18px;
+    font-weight:700;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.application-form button:hover{
+    background:#a67f20;
+}
+
+@media(max-width:768px){
+
+.form-grid{
+grid-template-columns:1fr;
+}
+
+}
